@@ -1,0 +1,20 @@
+@import './mixins.scss';
+@import '../../Components/Nav/Nav.scss',
+'../../Components/Upcoming/Upcoming.scss',
+'../../Components/About/About.scss',
+'../../Components/Location/Location.scss';
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin-left: 5%;
+
+
+}
