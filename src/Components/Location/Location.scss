@@ -5,6 +5,7 @@
         width: 100%;
         display: flex;
         gap: 5%;
+        flex-wrap: wrap;
     }
 
     &_card_left {
@@ -20,9 +21,6 @@
         border-top-right-radius: 280px;
     }
 
-    &_card_right {
-        width: 45%;
-    }
 
     &_title {
         font-family: 'Golos Text', sans-serif;
@@ -38,6 +36,11 @@
         font-weight: 400;
         line-height: 24px;
         text-align: left;
-
+    }
+    &_card1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        width: 45%;
     }
 }

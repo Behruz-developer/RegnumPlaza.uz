@@ -7,11 +7,12 @@
     &_box {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(3, 0.5fr);
+        grid-template-rows: repeat(2, 0.5fr);
         justify-content: space-between;
         gap: 24px;
         width: 100%;
-        @include media(600px){
+
+        @include media(600px) {
             grid-template-columns: repeat(1, 100%);
             grid-template-rows: repeat(3, 0.5fr);
         }
@@ -36,6 +37,7 @@
         font-weight: 600;
         line-height: 56px;
         text-align: left;
+
         @include media (1200px) {
             font-size: 32px;
 
@@ -49,6 +51,7 @@
         line-height: 24px;
         text-align: left;
         color: #505050;
+
         @include media (1200px) {
             font-size: 16px;
 
@@ -60,9 +63,10 @@
         column-gap: 40px;
         margin-top: 32px;
         flex: 2 2 40%;
-@include media(1200px){
-    grid-column:span 2;
-}
+
+        @include media(1200px) {
+            grid-column: span 2;
+        }
     }
 
     &_card_icon {
@@ -70,7 +74,7 @@
         // flex-direction: column;
         row-gap: 56px;
         column-gap: 5%;
-flex-wrap: wrap;
+        flex-wrap: wrap;
         // @include media(1480px) {
         //     flex-direction: row;
         // }
@@ -89,25 +93,29 @@ flex-wrap: wrap;
         font-weight: 500;
         line-height: 32px;
         column-gap: 16px;
-width: 40%;
-@include media(1200px){
-    width: 30%;
-    font-size: 18px;
-    line-height: 24px;
+        width: 40%;
 
-}
-@include media(800px){
-    width: 45%;
-    font-size: 18px;
-    line-height: 24px;
+        @include media(1200px) {
+            width: 30%;
+            font-size: 18px;
+            line-height: 24px;
 
-}
-@include media(600px){
-    width: 40%;
-    font-size: 14px;
-    line-height: 18px;
+        }
 
-}
+        @include media(800px) {
+            width: 45%;
+            font-size: 18px;
+            line-height: 24px;
+
+        }
+
+        @include media(600px) {
+            width: 40%;
+            font-size: 14px;
+            line-height: 18px;
+
+        }
+
         img {
             width: 80px;
             height: 80px;
@@ -122,16 +130,19 @@ width: 40%;
     &_card_left {
         position: relative;
         grid-row: span 3;
-        
+
         max-height: 560px;
-        @include media(1200px){
+
+        @include media(1200px) {
             max-height: 400px;
         }
-        @include media(600px){
+
+        @include media(600px) {
             grid-row: span 2;
             order: 1;
             grid-column: span 1;
         }
+
         &_img {
             object-fit: cover;
             object-position: top;
@@ -141,7 +152,7 @@ width: 40%;
             border-radius: 16px;
             border-top-right-radius: 280px;
             display: inline-block;
-            
+
             transform: scaleX(-1);
             // @include media (1538px) {
             //     width: 750px;
@@ -157,6 +168,7 @@ width: 40%;
                 border-top-right-radius: 120px;
 
             }
+
             // @include media (1100px) {
             //     width: 600px;
             // }
@@ -180,6 +192,7 @@ width: 40%;
         gap: 16px;
         bottom: -50px;
         width: 90%;
+
         @include media(1538px) {
             padding: 30px 46px;
 
@@ -194,8 +207,12 @@ width: 40%;
             left: -20px;
 
         }
+
         @include media (600px) {
             left: 0px;
+            width: 100%;
+            bottom: -80px;
+
 
         }
 
@@ -227,6 +244,7 @@ width: 40%;
                 font-size: 16px;
                 line-height: 24px;
             }
+
             @include media (850px) {
                 font-size: 14px;
                 line-height: 18px;

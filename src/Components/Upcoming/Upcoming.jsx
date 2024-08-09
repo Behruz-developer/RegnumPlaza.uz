@@ -12,7 +12,7 @@ const Upcoming = ({ images }) => {
   };
 
   useEffect(() => {
-    const autoSlider = setInterval(nextSlide, 3500);
+    const autoSlider = setInterval(nextSlide, 10000);
     return () => clearInterval(autoSlider);
   }, []);
 
