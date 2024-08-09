@@ -188,9 +188,11 @@
         column-gap: 10px;
         align-items: center;
 
-        @include media(1350px) {
-            display: none;
+        @include media (1200px){
+            flex-direction: column;
+            gap: 10px;
         }
+
 
         &_card {
             display: flex;
@@ -295,20 +297,17 @@
 
 }
 
-.nav2 {
-    transform: translateY(-160%);
-    // position: absolute;
-    width: 100%;
-    background-color: #384D8B;
-    height: 100%;
 
-    @include media(1200px) {
-        transform: translateY(-160%);
-        transition: .5s;
-
-        &.active {
-            transform: translateY(0);
-        }
+.menu{
+    display: none;
+    
+    @include media (1200px) {
+        display: flex;
+        margin-top: 26px;
     }
-
+}
+.download{
+    @include media(1410px) {
+        display: none;
+    }
 }
