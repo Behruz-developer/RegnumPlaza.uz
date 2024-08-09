@@ -25,7 +25,7 @@ const Nav = () => {
                 <img className="nav_logo" src={logo} alt="" />
               </a>
               <div className={`nav_list_menu ${active && "active"}`}>
-                <div className="container">
+                <div className="container2">
                   <div className="nav_list_card">
                     <BiMenuAltLeft className="nav_menu_logo" />
                     <a href="#!">
@@ -82,21 +82,23 @@ const Nav = () => {
                       <FaYoutube className="nav_icons_icon" />
                     </div>
                   </div>
-                  <div className="nav_card_right">
-              <div className="nav_contact">
-                <PiPhoneCallLight className="nav_phone_icon" />
-                <a href="tel: 1066" className="nav_contact_text">
-                  1066
-                </a>
-              </div>
-              <div className="nav_download">
-                <RxDownload className="nav_phone_icon" />
-                <div className="nav_download_card">
-                  <p className="nav_download_text1">Taqdimot</p>
-                  <p className="nav_download_text2">5.3 mb yuklab olish </p>
-                </div>
-              </div>
-            </div>
+                  <div className="nav_card_right menu">
+                    <div className="nav_contact">
+                      <PiPhoneCallLight className="nav_phone_icon" />
+                      <a href="tel: 1066" className="nav_contact_text">
+                        1066
+                      </a>
+                    </div>
+                    <div className="nav_download">
+                      <RxDownload className="nav_phone_icon" />
+                      <div className="nav_download_card">
+                        <p className="nav_download_text1">Taqdimot</p>
+                        <p className="nav_download_text2">
+                          5.3 mb yuklab olish
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -108,7 +110,7 @@ const Nav = () => {
                 </a>
                 <IoMenu className="nav_menu" onClick={() => setActive(true)} />
               </div>
-              <div className="nav_download">
+              <div className="nav_download download">
                 <RxDownload className="nav_phone_icon" />
                 <div className="nav_download_card">
                   <p className="nav_download_text1">Taqdimot</p>
