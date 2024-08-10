@@ -25,6 +25,7 @@
     transform: scale(0.8); /* 80% ga kichraytirish */
     transform-origin: top left;
     width: 125%;
+    height: 100vh; /* Butun ekran balandligini qamrab oladi */
     overflow-x: hidden;
   }
 }
