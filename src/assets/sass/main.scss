@@ -20,7 +20,14 @@
     font-family: 'Golos Text', sans-serif;
 
 }
-
+@media (min-width: 1000px) and (max-width: 1600px) {
+  body {
+    transform: scale(0.8); /* 80% ga kichraytirish */
+    transform-origin: top left;
+    width: 125%;
+    overflow-x: hidden;
+  }
+}
 .container{
     width: 90%;
     margin-left: 5%;
