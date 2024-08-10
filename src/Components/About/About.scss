@@ -1,8 +1,15 @@
 .about {
     margin-top: 64px;
-    margin-bottom: 100px;
     height: auto;
-
+    @include media(1000px) {
+        margin-top: 50px;
+    }
+    @include media(800px) {
+        margin-top: 40px;
+    }
+    @include media(700px) {
+        margin-top: 35px;
+    }
     &_box {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -11,7 +18,7 @@
         gap: 24px;
         width: 100%;
 
-        @include media(600px)  {
+        @include media(600px) {
             grid-template-columns: repeat(1, 100%);
             grid-template-rows: repeat(3, 0.5fr);
         }
@@ -23,7 +30,7 @@
         row-gap: 16px;
         grid-column: span 1;
 
-        @include media (1200px) {
+        @include media(1200px) {
             grid-row: span 3;
         }
     }
@@ -34,7 +41,7 @@
         font-weight: 600;
         line-height: 56px;
         text-align: left;
-        @include media (1200px) {
+        @include media(1200px) {
             font-size: 32px;
         }
     }
@@ -46,7 +53,7 @@
         line-height: 24px;
         text-align: left;
         color: #505050;
-        @include media (1200px) {
+        @include media(1200px) {
             font-size: 16px;
         }
     }
@@ -56,9 +63,13 @@
         column-gap: 40px;
         margin-top: 32px;
         flex: 2 2 40%;
-@include media(1200px){
-    grid-column:span 2;
-}
+        width: 100%;
+        @include media(1200px) {
+            grid-column: span 2;
+        }
+        @include media(600px) {
+            grid-column: span 1;
+        }
     }
 
     &_card_icon {
@@ -67,6 +78,7 @@
         row-gap: 56px;
         column-gap: 5%;
         flex-wrap: wrap;
+        width: 100%;
         // @include media(1480px) {
         //     flex-direction: row;
         // }
@@ -85,25 +97,22 @@
         font-weight: 500;
         line-height: 32px;
         column-gap: 16px;
-width: 40%;
-@include media(1200px){
-    width: 30%;
-    font-size: 18px;
-    line-height: 24px;
-
-}
-@include media(800px){
-    width: 45%;
-    font-size: 18px;
-    line-height: 24px;
-
-}
-@include media(600px){
-    width: 40%;
-    font-size: 14px;
-    line-height: 18px;
-
-}
+        width: 40%;
+        @include media(1200px) {
+            width: 30%;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @include media(800px) {
+            width: 45%;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @include media(600px) {
+            width: 47.5%;
+            font-size: 14px;
+            line-height: 18px;
+        }
         img {
             width: 80px;
             height: 80px;
@@ -128,10 +137,10 @@ width: 40%;
         grid-row: span 3;
 
         max-height: 560px;
-        @include media(1200px){
+        @include media(1200px) {
             max-height: 400px;
         }
-        @include media(600px){
+        @include media(600px) {
             grid-row: span 2;
             order: 1;
             grid-column: span 1;
@@ -197,9 +206,8 @@ width: 40%;
             padding: 16px;
             left: -20px;
         }
-        @include media (600px) {
+        @include media(600px) {
             left: 0px;
-
         }
 
         img {
@@ -230,7 +238,7 @@ width: 40%;
                 font-size: 16px;
                 line-height: 24px;
             }
-            @include media (850px) {
+            @include media(850px) {
                 font-size: 14px;
                 line-height: 20px;
             }

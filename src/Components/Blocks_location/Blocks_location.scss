@@ -104,6 +104,7 @@
 
         @include media(1480px) {
             flex-direction: row;
+            column-gap: 0;
         }
 
         @include media (800px) {
