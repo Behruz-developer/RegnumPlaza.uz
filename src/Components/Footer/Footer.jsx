@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import location from "../../assets/images/location.png";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";

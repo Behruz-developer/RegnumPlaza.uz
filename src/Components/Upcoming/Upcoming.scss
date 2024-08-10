@@ -219,8 +219,10 @@
             text-decoration: none;
         }
 
-        @include media(1100px) {
+        @include media(1300px) {
             margin-bottom: 100px;
+            flex-wrap: wrap;
+
 
         }
 
@@ -229,7 +231,6 @@
         }
 
         @media (max-width:800px) {
-            flex-wrap: wrap;
             align-items: end;
         }
 
@@ -259,8 +260,10 @@
         gap: 10px;
         align-items: flex-end;
 
-        @include media(1000px) {
+        @include media(1300px) {
             flex-direction: column-reverse;
+            width: 30%;
+
         }
 
         @include media(800px) {
@@ -277,9 +280,13 @@
         justify-content: flex-end;
         align-items: center;
         margin-right: 10px;
-
+@include media(1299px){
+    order: +1;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0px;
+}
         @include media(800px) {
-            order: +1;
             width: 100%;
             margin-top: 10px;
             margin-right: 0px;

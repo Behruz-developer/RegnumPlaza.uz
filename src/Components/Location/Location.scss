@@ -6,11 +6,13 @@
         display: grid;
         // justify-content: end;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 0.5fr);
+        grid-template-rows: repeat(3, 0.5fr);
         gap: 8%;
 
         @include media(1200px) {
             gap: 5%;
+            grid-template-rows: repeat(1, 0.5fr);
+
         }
 
         @include media(600px) {
@@ -46,7 +48,7 @@
 
         @include media(1000px) {
             border-top-right-radius: 120px;
-            height: auto;
+            height: 100%;
         }
 
         @include media(600px) {
