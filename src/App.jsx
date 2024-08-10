@@ -8,6 +8,7 @@ import Nav from "./Components/Nav/Nav"
 import Upcoming from "./Components/Upcoming/Upcoming"
 import img1 from './assets/images/intro1.png'
 import img2 from './assets/images/intro1.png'
+import Send_form from "./Components/Send_form/Send_form"
 import Block_average from "./Components/Block_average/Block_average"
 import Houses_plan from "./Components/Houses_plan/Houses_plan"
 
@@ -21,6 +22,7 @@ const App = () => {
       <Location/>
       <Block_average/>
       <Blocks_location/>
+      <Send_form/>
       <Houses_plan/>
       <Construction/>
       <Company/>

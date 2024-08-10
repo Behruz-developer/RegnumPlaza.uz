@@ -4,6 +4,7 @@
 '../../Components/About/About.scss',
 '../../Components/Location/Location.scss',
 '../../Components/Footer/Footer.scss',
+'../../Components/Send_form/Send_form.scss',
 '../../Components/Construction/Construction.scss',
 '../../Components/Company/Company.scss',
 '../../Components/Blocks_location/blocks_location.scss',
@@ -16,6 +17,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+
 }
 
 .container{

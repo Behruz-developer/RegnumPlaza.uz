@@ -5,7 +5,12 @@
     width: 100%;
     top: 0;
     left: 0;
+    transition: .3s;
 
+    &.scrolled{
+        background: #384D8B;
+        opacity: 0.9;
+    }
     &_card_left {
         display: flex;
         align-items: center;

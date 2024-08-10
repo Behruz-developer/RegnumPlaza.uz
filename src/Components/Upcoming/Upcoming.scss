@@ -245,6 +245,7 @@
         @media (max-width:500px) {
             margin-bottom: 30px;
         }
+
         @media (max-width:400px) {
             margin-bottom: 20px;
         }
@@ -275,17 +276,18 @@
 
     &_icon2_card {
         width: 30%;
-        height: 45px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-right: 10px;
-@include media(1299px){
-    order: +1;
-    width: 100%;
-    margin-top: 10px;
-    margin-right: 0px;
-}
+
+        @include media(1299px) {
+            order: +1;
+            width: 100%;
+            margin-top: 10px;
+            margin-right: 0px;
+        }
+
         @include media(800px) {
             width: 100%;
             margin-top: 10px;
@@ -315,6 +317,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        z-index: 3;
 
         @include media(900px) {
             width: 50px;
@@ -327,7 +330,8 @@
             height: 45px;
             font-size: 10px;
         }
-        &:hover{
+
+        &:hover {
             background: white;
             color: #384D8B;
         }
@@ -360,7 +364,7 @@
         line-height: 24px;
         text-align: right;
         transition: .3s;
-        z-index: 99999999;
+        z-index: 3;
 
         @include media(900px) {
             width: 219px;
@@ -373,7 +377,8 @@
             font-size: 12px;
             padding: 12px 24px;
         }
-        &:hover{
+
+        &:hover {
             background: white;
             color: #384D8B;
         }
