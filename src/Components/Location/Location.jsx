@@ -17,18 +17,21 @@ const Location = () => {
               muvaffagiyatli tarzda uyg'unlashadi.
             </p>
             <p className="location_text">
-              Bu yerda yashash ajoyib, biznes bilan shug'ullanish esa qulay
+              Bu yerda yashash ajoyib, biznes bilan shug'ullanish esa qulay <br></br>
               Transport infratuzilmasi shaharning istalgan nuqtasiga oson yetib
               borish imkonini beradi: Siz faqat istagan va zarur
               yo'nalishingizni tanlashingiz kifoya.
             </p>
           </div>
           <div className="location_card2">
+          <div className="location_card2_container">
+         
             <p className="location_text2">
-              NRG Qorasuv - Siz va yaginlaringiz uchun zarur bolgan barcha
+              <span>NRG Qorasuv</span> - Siz va yaginlaringiz uchun zarur bolgan barcha
               qulayliklarni o'zida jamlagan, shahar xaritasidagi yangi nuqta va
               o'ziga tortuvchi joyga aylanadi!
             </p>
+            </div>
           </div>
         </div>
       </div>
