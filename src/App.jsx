@@ -1,4 +1,5 @@
 import About from "./Components/About/About"
+import Blocks_location from "./Components/Blocks_location/Blocks_location"
 import Location from "./Components/Location/Location"
 import Nav from "./Components/Nav/Nav"
 import Upcoming from "./Components/Upcoming/Upcoming"
@@ -12,6 +13,7 @@ const App = () => {
       <Upcoming images={images}/>
       <About/>
       <Location/>
+      <Blocks_location/>
     </>
   )
 }
