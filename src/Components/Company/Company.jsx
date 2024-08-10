@@ -1,5 +1,4 @@
-import universal from '../../assets/images/universal.png'
-
+import universal from "../../assets/images/universal.png";
 
 const Company = () => {
   return (
@@ -29,15 +28,23 @@ const Company = () => {
             <div className="company_card_bottom">
               <div className="company_card_bottom_numbers">
                 <h3>1684+</h3>
-                <p>Oila bizning uylarda yashamoqda</p>
+                <p>
+                  Oila bizning uylarda <br /> yashamoqda
+                </p>
               </div>
               <div className="company_card_bottom_numbers">
-                <h3>188 430+ m2</h3>
-                <p>Xonadonlar qurib bitkazilib o‘z egalariga topshirildi</p>
+                <h3>
+                  188 430+ m<span>2</span>
+                </h3>
+                <p>
+                  Xonadonlar qurib bitkazilib <br /> o‘z egalariga topshirildi
+                </p>
               </div>
             </div>
           </div>
-          <img src={universal} alt="" />
+          <div className="company_card_img">
+            <img src={universal} alt="" className="company_img" />
+          </div>
         </div>
       </div>
     </div>

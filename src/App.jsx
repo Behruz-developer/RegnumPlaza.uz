@@ -1,5 +1,5 @@
 import About from "./Components/About/About"
-// import Company from "./Components/Company/Compa
+import Company from "./Components/Company/Company"
 import Construction from "./Components/Construction/Construction"
 import Footer from "./Components/Footer/Footer"
 import Blocks_location from "./Components/Blocks_location/Blocks_location"
@@ -17,11 +17,11 @@ const App = () => {
       <Upcoming images={images}/>
       <About/>
       <Location/>
-      <Construction/>
-      {/* <Company/> */}
-      <Footer/>
       <Location/>
       <Blocks_location/>
+      <Construction/>
+      <Company/>
+      <Footer/>
     </>
   )
 }
