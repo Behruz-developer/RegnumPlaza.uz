@@ -2,6 +2,7 @@ import About from "./Components/About/About"
 // import Company from "./Components/Company/Compa
 import Construction from "./Components/Construction/Construction"
 import Footer from "./Components/Footer/Footer"
+import Blocks_location from "./Components/Blocks_location/Blocks_location"
 import Location from "./Components/Location/Location"
 import Nav from "./Components/Nav/Nav"
 import Upcoming from "./Components/Upcoming/Upcoming"
@@ -14,10 +15,12 @@ const App = () => {
       <Nav/>
       <Upcoming images={images}/>
       <About/>
-      {/* <Location/> */}
+      <Location/>
       <Construction/>
       {/* <Company/> */}
       <Footer/>
+      <Location/>
+      <Blocks_location/>
     </>
   )
 }

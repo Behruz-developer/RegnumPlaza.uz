@@ -3,12 +3,37 @@
 
     &_box {
         width: 100%;
-        display: flex;
-        gap: 5%;
+        display: grid;
+        // justify-content: end;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 0.5fr);
+        gap: 8%;
+
+        @include media(1200px) {
+            gap: 5%;
+        }
+
+        @include media(600px) {
+            grid-template-columns: repeat(1, 100%);
+            grid-template-rows: repeat(3);
+            gap: 0;
+        }
     }
 
     &_card_left {
-        width: 50%;
+        grid-row: span 3;
+
+        @include media(1000px) {
+            grid-row: span 1;
+
+        }
+
+        @include media(600px) {
+            grid-row: span 1;
+            grid-column: span 2;
+            order: +1;
+            margin-top: 16px;
+        }
     }
 
     &_img {
@@ -18,11 +43,18 @@
         object-position: top;
         border-radius: 16px;
         border-top-right-radius: 280px;
+
+        @include media(1000px) {
+            border-top-right-radius: 120px;
+            height: auto;
+        }
+
+        @include media(600px) {
+            border-top-right-radius: 100px;
+            opacity: 80%;
+        }
     }
 
-    &_card_right {
-        width: 45%;
-    }
 
     &_title {
         font-family: 'Golos Text', sans-serif;
@@ -30,6 +62,15 @@
         font-weight: 600;
         line-height: 56px;
         text-align: left;
+
+        @include media(1000px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        @include media(600px) {
+            display: none;
+        }
     }
 
     &_text {
@@ -38,6 +79,94 @@
         font-weight: 400;
         line-height: 24px;
         text-align: left;
+        color: #505050;
 
+        @include media(1000px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+
+    &_card1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        grid-column: span 1;
+        width: 70%;
+
+        @include media(1600px) {
+            width: 85%;
+        }
+
+        @include media(600px) {
+            order: -1;
+            grid-row: span 1;
+            width: 100%;
+
+        }
+    }
+
+    &_card2 {
+        grid-column-start: 2;
+        width: 70%;
+
+        @include media(1600px) {
+            width: 85%;
+        }
+
+        @include media(1000px) {
+            width: 90%;
+            grid-column-start: 1;
+            grid-column: span 2;
+        }
+
+        @include media(600px) {
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        &_container {
+            background: #F3F3EF;
+            padding: 24px 0;
+            padding-left: 44px;
+            padding-right: 44px;
+            grid-column-start: 2;
+            border-radius: 32px 32px 32px 0px;
+
+            @include media(600px) {
+                padding-left: 24px;
+                padding-right: 16px;
+                border-radius: 64px 32px 32px 0px;
+
+            }
+        }
+    }
+
+
+    &_text2 {
+        font-family: 'Golos Text', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        width: 85%;
+
+        padding-left: 8px;
+        border-left: 4px solid #384D8B;
+
+        @include media(1200px) {
+            width: 95%;
+        }
+
+        @include media(1000px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        span {
+            font-weight: 600;
+
+        }
     }
 }
