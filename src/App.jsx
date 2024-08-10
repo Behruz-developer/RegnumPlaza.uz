@@ -8,6 +8,7 @@ import Nav from "./Components/Nav/Nav"
 import Upcoming from "./Components/Upcoming/Upcoming"
 import img1 from './assets/images/intro1.png'
 import img2 from './assets/images/intro1.png'
+import Send_form from "./Components/Send_form/Send_form"
 
 const App = () => {
   const images = [img1, img2];
@@ -20,6 +21,7 @@ const App = () => {
       {/* <Company/> */}
       <Location/>
       <Blocks_location/>
+      <Send_form/>
       <Construction/>
       <Footer/>
     </>
