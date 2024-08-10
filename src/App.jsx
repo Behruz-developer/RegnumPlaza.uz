@@ -1,5 +1,5 @@
 import About from "./Components/About/About"
-// import Company from "./Components/Company/Company"
+import Company from "./Components/Company/Company"
 import Construction from "./Components/Construction/Construction"
 import Footer from "./Components/Footer/Footer"
 import Blocks_location from "./Components/Blocks_location/Blocks_location"
@@ -9,6 +9,8 @@ import Upcoming from "./Components/Upcoming/Upcoming"
 import img1 from './assets/images/intro1.png'
 import img2 from './assets/images/intro1.png'
 import Send_form from "./Components/Send_form/Send_form"
+import Block_average from "./Components/Block_average/Block_average"
+import Houses_plan from "./Components/Houses_plan/Houses_plan"
 
 const App = () => {
   const images = [img1, img2];
@@ -18,11 +20,12 @@ const App = () => {
       <Upcoming images={images}/>
       <About/>
       <Location/>
-      {/* <Company/> */}
-      <Location/>
+      <Block_average/>
       <Blocks_location/>
       <Send_form/>
+      <Houses_plan/>
       <Construction/>
+      <Company/>
       <Footer/>
     </>
   )
