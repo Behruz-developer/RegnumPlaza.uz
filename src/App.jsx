@@ -17,11 +17,11 @@ const App = () => {
       <Upcoming images={images}/>
       <About/>
       <Location/>
-      <Construction/>
       {/* <Company/> */}
-      <Footer/>
       <Location/>
       <Blocks_location/>
+      <Construction/>
+      <Footer/>
     </>
   )
 }
