@@ -11,7 +11,7 @@
         margin-top: 16px;
     }
 
-    
+
     &_box {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -26,7 +26,6 @@
         }
     }
 
-
     &_card_text {
         display: flex;
         flex-direction: column;
@@ -35,17 +34,15 @@
         margin-top: 36px;
         width: 80%;
 
-        @include media (1200px) {
+        @include media(1200px) {
             grid-row: span 3;
-
         }
 
-        @include media (1000px) {
+        @include media(1000px) {
             width: 90%;
-
         }
 
-        @include media (600px) {
+        @include media(600px) {
             grid-row: span 1;
             width: 100%;
             margin-top: 0;
@@ -53,13 +50,13 @@
     }
 
     &_title {
-        font-family: 'Golos Text', sans-serif;
+        font-family: "Golos Text", sans-serif;
         font-size: 40px;
         font-weight: 600;
         line-height: 56px;
         text-align: left;
 
-        @include media (1200px) {
+        @include media(1200px) {
             font-size: 32px;
             line-height: 40px;
         }
@@ -70,16 +67,15 @@
     }
 
     &_text {
-        font-family: 'Golos Text', sans-serif;
+        font-family: "Golos Text", sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 24px;
         text-align: left;
         color: #505050;
 
-        @include media (1200px) {
+        @include media(1200px) {
             font-size: 16px;
-
         }
     }
 
@@ -92,7 +88,6 @@
         @include media(1200px) {
             grid-column: span 2;
             width: 100%;
-
         }
 
         @include media(600px) {
@@ -112,29 +107,27 @@
             column-gap: 0;
         }
 
-        @include media (800px) {
+        @include media(800px) {
             margin-top: 16px;
         }
 
-        @include media (600px) {
+        @include media(600px) {
             width: 100%;
             margin-top: 0;
             row-gap: 12px;
             flex-direction: column;
             column-gap: 0px;
-
-
         }
     }
 
     &_icon_text:nth-of-type(3) {
         width: 35%;
 
-        @include media (1200px) {
+        @include media(1200px) {
             width: 30%;
         }
 
-        @include media (600px) {
+        @include media(600px) {
             width: 100%;
         }
     }
@@ -143,7 +136,7 @@
         // width: 330px;
         display: flex;
         align-items: start;
-        font-family: 'Golos Text', sans-serif;
+        font-family: "Golos Text", sans-serif;
         font-size: 24px;
         font-weight: 500;
         line-height: 32px;
@@ -155,21 +148,18 @@
             // width: 30%;
             font-size: 20px;
             line-height: 28px;
-
         }
 
         @include media(1200px) {
             width: 30%;
             font-size: 18px;
             line-height: 24px;
-
         }
 
         @include media(1000px) {
             // width: 5%;
             font-size: 16px;
             line-height: 22px;
-
         }
 
         @include media(800px) {
@@ -234,21 +224,17 @@
             border-top-right-radius: 280px;
             display: inline-block;
 
-
-
-            @include media (1250px) {
+            @include media(1250px) {
                 border-top-right-radius: 120px;
-
             }
 
             // @include media (1100px) {
             //     width: 600px;
             // }
-            @include media (600px) {
+            @include media(600px) {
                 border-top-right-radius: 100px;
                 height: 350px;
             }
-
         }
     }
 
@@ -256,7 +242,7 @@
         padding: 40px 56px;
         background: white;
         position: absolute;
-        box-shadow: 0px 12px 26px 0px #0000001A;
+        box-shadow: 0px 12px 26px 0px #0000001a;
         left: 20%;
         border-radius: 16px;
         display: flex;
@@ -268,45 +254,37 @@
 
         @include media(1538px) {
             padding: 30px 46px;
-
         }
 
-        @include media (1490px) {
+        @include media(1490px) {
             padding: 20px 36px;
         }
 
-        @include media (1250px) {
+        @include media(1250px) {
             padding: 16px;
             // left: -20px;
-
         }
 
-        @include media (1000px) {
+        @include media(1000px) {
             left: 5%;
             width: 90%;
             bottom: -16px;
-
-
         }
 
-        @include media (600px) {
+        @include media(600px) {
             left: 0px;
             width: 100%;
             bottom: 0px;
-
-
         }
-
 
         img {
             padding: 10px;
-            background: #F3F3EF;
+            background: #f3f3ef;
             border-radius: 16px;
-
         }
 
         &_text {
-            font-family: 'Golos Text', sans-serif;
+            font-family: "Golos Text", sans-serif;
             font-size: 24px;
             font-weight: 400;
             line-height: 32px;
@@ -316,29 +294,27 @@
                 font-size: 22px;
             }
 
-            @include media (1450px) {
+            @include media(1450px) {
                 font-size: 20px;
-
             }
 
-            @include media (1250px) {
+            @include media(1250px) {
                 font-size: 16px;
                 line-height: 24px;
             }
 
-            @include media (850px) {
+            @include media(850px) {
                 font-size: 14px;
                 line-height: 18px;
             }
         }
 
         &_text2 {
-            font-family: 'Golos Text', sans-serif;
+            font-family: "Golos Text", sans-serif;
             font-size: 24px;
             font-weight: 600;
             line-height: 32px;
             text-align: left;
-
         }
     }
 

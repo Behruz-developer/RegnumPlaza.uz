@@ -6,6 +6,5 @@ import './assets/sass/main.scss'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    
   </StrictMode>,
 )
