@@ -47,11 +47,16 @@
         border-top-right-radius: 280px;
 
         @include media(1000px) {
-            border-top-right-radius: 120px;
+            border-top-right-radius: 200px;
             height: 100%;
         }
 
+        @include media (800px) {
+            border-top-right-radius: 150px;
+        }
+
         @include media(600px) {
+            border-radius: 8px;
             border-top-right-radius: 100px;
             opacity: 80%;
         }
@@ -111,10 +116,11 @@
 
     &_card2 {
         grid-column-start: 2;
-        width: 70%;  
+        width: 70%;
         background-color: #F3F3EF;
         padding: 24px 32px;
         border-radius: 32px 32px 32px 0px;
+
         @include media(1600px) {
             width: 85%;
         }

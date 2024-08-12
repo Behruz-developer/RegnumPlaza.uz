@@ -2,17 +2,8 @@
     width: 100%;
     height: 100%;
     position: relative;
-    margin-top: 144px;
-
-    @include media(1400px) {
-        margin-top: 100px;
-    }
-    @include media(1200px) {
-        margin-top: 85px;
-    }   
-    @include media(1000px) {
-        margin-top: 70px;
-    }   
+    margin-top: 64px;
+ 
     @include media(800px) {
         margin-top: 40px;
     }
@@ -23,7 +14,7 @@
     &_card {
         width: 100%;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0) 100%);
-        height: 80vh;
+        height: 90vh;
         display: inline-block;
         position: absolute;
         top: 0;
@@ -33,7 +24,7 @@
         width: 100%;
         z-index: -1;
         display: block;
-        height: 80vh;
+        height: 90vh;
         object-fit: cover;
         @include media(550px) {
             height: 400px;

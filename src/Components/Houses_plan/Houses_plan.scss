@@ -1,5 +1,13 @@
 .houses {
     margin-top: 64px;
+
+    @include media (800px) {
+        margin-top: 40px;
+    }
+    @include media (600px) {
+        margin-top: 16px;
+    }
+
     &_title {
         font-family: "Golos Text", sans-serif;
         font-size: 48px;

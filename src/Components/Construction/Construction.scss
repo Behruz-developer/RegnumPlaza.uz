@@ -1,17 +1,14 @@
 .construction {
     padding-bottom: 64px;
     padding-top: 64px;
-    @include media(1000px) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+
     @include media(800px) {
-        padding-top: 50px;
+        padding-top: 40px;
         padding-bottom: 40px;
     }
     @include media(600px) {
-        padding-top: 50px;
-        padding-bottom: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     &_box {
         gap: 24px;
