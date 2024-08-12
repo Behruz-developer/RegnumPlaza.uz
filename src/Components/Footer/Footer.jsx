@@ -9,7 +9,6 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "../../../node_modules/leaflet/dist/leaflet.css";
 import L from "leaflet";
 import icon from "../../assets/images/metka.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 const DefaultIcon = L.icon({
   iconUrl: icon,

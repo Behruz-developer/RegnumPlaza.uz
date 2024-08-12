@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import universal from "../../assets/images/universal.png";
 
 const Company = () => {
