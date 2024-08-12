@@ -8,29 +8,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 const Nav = () => {
   const [active, setActive] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const handleScroll = () => {
-    if (window.scrollY > 30) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
-      <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
+      <nav className='nav'>
         <div className="container">
           <div className="nav_box">
             <div className="nav_card_left">

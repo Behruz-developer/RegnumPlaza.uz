@@ -99,6 +99,7 @@
         @include media(800px) {
             overflow-x: scroll;
             margin-top: 40px;
+            gap: 24px;
         }
     }
     &_img {

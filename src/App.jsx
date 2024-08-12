@@ -22,8 +22,8 @@ const App = () => {
       <Location/>
       <Block_average/>
       <Blocks_location/>
-      <Send_form/>
       <Houses_plan/>
+      <Send_form/>
       <Construction/>
       <Company/>
       <Footer/>

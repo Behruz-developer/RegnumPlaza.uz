@@ -1,15 +1,19 @@
 .about {
     margin-top: 64px;
     height: auto;
+
     @include media(1000px) {
         margin-top: 50px;
     }
+
     @include media(800px) {
-        margin-top: 40px;
-    }
-    @include media(700px) {
         margin-top: 35px;
     }
+
+    @include media(700px) {
+        margin-top: 30px;
+    }
+
     &_box {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -41,8 +45,16 @@
         font-weight: 600;
         line-height: 56px;
         text-align: left;
+
         @include media(1200px) {
             font-size: 32px;
+            line-height: 40px;
+
+        }
+        @include media(800px) {
+            font-size: 24px;
+            line-height: 32px;
+
         }
     }
 
@@ -53,6 +65,7 @@
         line-height: 24px;
         text-align: left;
         color: #505050;
+
         @include media(1200px) {
             font-size: 16px;
         }
@@ -64,9 +77,11 @@
         margin-top: 32px;
         flex: 2 2 40%;
         width: 100%;
+
         @include media(1200px) {
             grid-column: span 2;
         }
+
         @include media(600px) {
             grid-column: span 1;
         }
@@ -98,21 +113,25 @@
         line-height: 32px;
         column-gap: 16px;
         width: 40%;
+
         @include media(1200px) {
             width: 30%;
             font-size: 18px;
             line-height: 24px;
         }
+
         @include media(800px) {
             width: 45%;
             font-size: 18px;
             line-height: 24px;
         }
+
         @include media(600px) {
             width: 47.5%;
             font-size: 14px;
             line-height: 18px;
         }
+
         img {
             width: 80px;
             height: 80px;
@@ -121,10 +140,12 @@
                 width: 54px;
                 height: 54px;
             }
+
             @include media(1200px) {
                 width: 40px;
                 height: 40px;
             }
+
             @include media(600px) {
                 width: 48px;
                 height: 48px;
@@ -137,9 +158,11 @@
         grid-row: span 3;
 
         max-height: 560px;
+
         @include media(1200px) {
             max-height: 400px;
         }
+
         @include media(600px) {
             grid-row: span 2;
             order: 1;
@@ -206,6 +229,7 @@
             padding: 16px;
             left: -20px;
         }
+
         @include media(600px) {
             left: 0px;
         }
@@ -214,6 +238,7 @@
             padding: 10px;
             background: #f3f3ef;
             border-radius: 16px;
+
             @include media(600px) {
                 padding: 12px;
             }
@@ -238,6 +263,7 @@
                 font-size: 16px;
                 line-height: 24px;
             }
+
             @include media(850px) {
                 font-size: 14px;
                 line-height: 20px;
@@ -250,6 +276,7 @@
             font-weight: 600;
             line-height: 32px;
             text-align: left;
+
             @include media(800px) {
                 font-size: 14px;
                 line-height: 20px;
