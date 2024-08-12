@@ -1,4 +1,4 @@
-import average from '../../assets/images/average.png'
+import average from '../../assets/images/avarage.jpg'
 
 
 const Block_average = () => {
