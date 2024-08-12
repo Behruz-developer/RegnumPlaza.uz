@@ -95,6 +95,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 70px;
+        height: fit-content;
 
         @include media(800px) {
             overflow-x: scroll;
@@ -106,7 +107,6 @@
         width: 30%;
         object-fit: cover;
         flex-shrink: 0;
-        max-height: 480px;
 
         @include media(800px) {
             width:343px;
