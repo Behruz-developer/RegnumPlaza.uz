@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import location from "../../assets/images/location.png";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -9,7 +8,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "../../../node_modules/leaflet/dist/leaflet.css";
 import L from "leaflet";
 import icon from "../../assets/images/metka.png";
-
+import { MdOutlineLocationOn } from "react-icons/md";
 const DefaultIcon = L.icon({
   iconUrl: icon,
   iconSize: [48, 56],
@@ -28,7 +27,8 @@ const Footer = () => {
             <h2 className="footer_title">Bog‘lanish</h2>
             <div className="footer_location">
               <div className="footer_location_title">
-                <img src={location} alt="" />
+              <MdOutlineLocationOn className="footer_location_icon"/>
+
                 Sotuv bo‘limi
               </div>
               <p className="footer_location_text">
@@ -38,7 +38,8 @@ const Footer = () => {
             </div>
             <div className="footer_location">
               <div className="footer_location_title">
-                <img src={location} alt="" />
+              <MdOutlineLocationOn className="footer_location_icon"/>
+
                 Sotuv bo‘limi
               </div>
               <p className="footer_location_text">

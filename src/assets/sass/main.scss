@@ -50,3 +50,23 @@ body {
     margin-left: 5%;
   }
 }
+
+.about,
+.average,
+.blocks_location,
+.company,
+.construction,
+.houses,
+.location,
+.form {
+  margin-top: 90px;
+
+  @include media (800px) {
+    margin-top: 40px;
+  }
+
+  @include media (600px) {
+    margin-top: 16px;
+  }
+
+}

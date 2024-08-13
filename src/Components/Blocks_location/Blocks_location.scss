@@ -1,15 +1,7 @@
 .blocks_location {
-    margin-top: 64px;
     margin-bottom: 100px;
     height: auto;
 
-    @include media(800px) {
-        margin-top: 40px;
-    }
-
-    @include media(600px) {
-        margin-top: 16px;
-    }
 
 
     &_box {
