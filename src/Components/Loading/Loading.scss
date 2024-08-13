@@ -87,6 +87,11 @@
 }
 
 .loading {
+    background: #384D8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     @media (min-width: 1000px) and (max-width: 1600px) {
         transform: scale(1.25);
         transform-origin: top left;
@@ -95,11 +100,7 @@
         overflow-x: hidden;
     }
 
-    background: #384D8B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
 
     &_card {
         display: flex;

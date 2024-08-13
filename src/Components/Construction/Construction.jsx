@@ -16,15 +16,15 @@ const Construction = () => {
                 </div>
                 <div className="construction_card">
                     <img src={construction2} alt="" />
-                    <p className="construction_text">Iyun</p>
+                    <p className="construction_text">May</p>
                 </div>
                 <div className="construction_card">
                     <img src={construction3} alt="" />
-                    <p className="construction_text">Iyun</p>
+                    <p className="construction_text">Aprel</p>
                 </div>
                 <div className="construction_card">
                     <img src={construction4} alt="" />
-                    <p className="construction_text">Iyun</p>
+                    <p className="construction_text">Mart</p>
                 </div>
             </div>
         </div>

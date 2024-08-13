@@ -279,6 +279,10 @@
 
     &_card {
         width: 70%;
+        @media (max-width:550px) {
+            margin-right: 5%;
+            width: 80%;
+        }
     }
 
     &_icons {
@@ -294,6 +298,10 @@
 
         @include media(800px) {
             width: 30%;
+            justify-content: flex-end;
+        }
+        @include media(550px) {
+            width: 15%;
             justify-content: flex-end;
         }
 
