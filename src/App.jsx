@@ -17,23 +17,26 @@ import Loading from "./Components/Loading/Loading";
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-      const handlePageLoad = () => {
-          if (document.readyState === 'complete') {
-              setIsLoading(false);
-          }
-      };
 
-      // Sahifa to'liq yuklanib bo'lganini tekshirish
-      if (document.readyState === 'complete') {
-          setIsLoading(false);
-      } else {
-          window.addEventListener('load', handlePageLoad);
-      }
+    useEffect(() => {
+        const handlePageLoad = () => {
+            if (document.readyState === 'complete') {
+                setIsLoading(false);
+            } else {
+                const interval = setInterval(() => {
+                    if (document.readyState === 'complete') {
+                        setIsLoading(false);
+                        clearInterval(interval);
+                    }
+                }, 100);
+            }
+        };
 
-      // Tozalash uchun event listenerni olib tashlash
-      return () => window.removeEventListener('load', handlePageLoad);
-  }, []);
+        handlePageLoad();
+        window.addEventListener('load', handlePageLoad);
+
+        return () => window.removeEventListener('load', handlePageLoad);
+    }, []);
   const images = [img1, img2];
   return (
     <>
