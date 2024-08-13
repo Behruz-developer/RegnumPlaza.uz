@@ -18,13 +18,22 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("load", () => {
-      setIsLoading(false);
-    });
+      const handlePageLoad = () => {
+          if (document.readyState === 'complete') {
+              setIsLoading(false);
+          }
+      };
 
-    return () => window.removeEventListener("load", () => setIsLoading(false));
+      // Sahifa to'liq yuklanib bo'lganini tekshirish
+      if (document.readyState === 'complete') {
+          setIsLoading(false);
+      } else {
+          window.addEventListener('load', handlePageLoad);
+      }
+
+      // Tozalash uchun event listenerni olib tashlash
+      return () => window.removeEventListener('load', handlePageLoad);
   }, []);
-
   const images = [img1, img2];
   return (
     <>
