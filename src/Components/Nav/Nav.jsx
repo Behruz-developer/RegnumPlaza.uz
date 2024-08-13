@@ -8,14 +8,15 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import {  useState } from "react";
+import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   const [active, setActive] = useState(false);
 
   return (
     <>
-      <nav className='nav'>
+      <nav className="nav">
         <div className="container">
           <div className="nav_box">
             <div className="nav_card_left">
@@ -36,14 +37,28 @@ const Nav = () => {
                   </div>
                   <ul className="nav_list">
                     <li>
-                      <a href="#!" className="nav_link">
+                      <Link
+                        to="about"
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        href="#!"
+                        className="nav_link"
+                      >
                         Loyiha haqida
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#!" className="nav_link">
+                      <Link
+                        to="location"
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        href="#!"
+                        className="nav_link"
+                      >
                         Joylashgan o‘rni
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a href="#!" className="nav_link">
@@ -56,14 +71,28 @@ const Nav = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#!" className="nav_link">
+                      <Link
+                        to="houses_plan"
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        href="#!"
+                        className="nav_link"
+                      >
                         Rejalashtirish
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#!" className="nav_link">
+                      <Link
+                        to="footer"
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        href="#!"
+                        className="nav_link"
+                      >
                         Bog‘lanish{" "}
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <div className="nav_icons">
