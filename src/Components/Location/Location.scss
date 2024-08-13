@@ -25,7 +25,7 @@
     &_card_left {
         grid-row: span 3;
 
-        @include media(1000px) {
+        @include media(850px) {
             grid-row: span 1;
 
         }
@@ -125,7 +125,7 @@
             width: 85%;
         }
 
-        @include media(1000px) {
+        @include media(850px) {
             width: 90%;
             grid-column-start: 1;
             grid-column: span 2;
