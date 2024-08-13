@@ -255,11 +255,24 @@
             width: 100.2%;
             left: -1px;
         }
-
-        img {
+        &_box{
+            width: 50px;
+            height: 50px;
+            @include media(1000px) {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        &_img {
+            width: 50px;
+            height: 100%;
             padding: 10px;
             background: #f3f3ef;
             border-radius: 16px;
+            @include media(1000px) {
+                width: 45px;
+                height: 45px;
+            }
 
             @include media(600px) {
                 padding: 12px;

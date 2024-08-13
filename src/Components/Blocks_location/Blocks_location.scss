@@ -2,8 +2,48 @@
     margin-bottom: 100px;
     height: auto;
 
+    &_svg_box{
+        width: 80px;
+        height: 80px;
+        @include media(1400px) {
+            width: 70px;
+            height: 70px;
+        }
 
+        @include media(1200px) {
+            width: 55px;
+            height: 55px;
+        }
 
+        @include media(600px) {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &_svg_card{
+        width: 80px;
+        height: 100%;
+        @include media(1400px) {
+            width: 70px;
+            height: 70px;
+        }
+
+        @include media(1200px) {
+            width: 55px;
+            height: 55px;
+        }
+
+        @include media(600px) {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &_svg_icon1{
+        fill: #000;
+    }
+    &_svg_icon2{
+        fill: #384D8B;
+    }
     &_box {
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -248,6 +288,9 @@
         bottom: -50px;
         width: 70%;
 
+
+
+
         @include media(1538px) {
             padding: 30px 46px;
         }
@@ -273,11 +316,26 @@
             bottom: 0px;
             border-radius: 8px;
         }
-
-        img {
+        &_box{
+            width: 50px;
+            height: 50px;
+            @include media(1000px) {
+                width: 45px;
+                height: 45px;
+            }
+        }
+        &_img {
+            width: 50px;
+            height: 100%;
             padding: 10px;
             background: #f3f3ef;
             border-radius: 16px;
+            @include media(1000px) {
+                width: 45px;
+                height: 45px;
+            }
+
+
         }
 
         &_text {
@@ -317,11 +375,5 @@
 
     .about2 {
         display: none;
-
-        // @include media (1480px) {
-        //     display: flex;
-        //     margin-top: 80px;
-
-        // }
     }
 }
