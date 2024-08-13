@@ -5,20 +5,11 @@
     height: 100vh;
     overflow: hidden;
 
-    @media (max-width:1600px) {
-        height: 125vh;
-    }
-    @media (max-width:1200px) {
-        height: 90vh;
-    }
-
-    @media (max-width:1100px) {
-        height: 85vh;
-    }
-
 
 
 }
+
+
 
 .main-carousel .carousel {
     width: 100%;
@@ -36,16 +27,7 @@
     opacity: 0;
     transition: 0.8s all;
     height: 100vh;
-    @media (max-width:1600px) {
-        height: 125vh;
-    }
-    @media (max-width:1200px) {
-        height: 90vh;
-    }
 
-    @media (max-width:1100px) {
-        height: 85vh;
-    }
 
 
 
@@ -89,19 +71,6 @@
     object-fit: cover;
     transform: scale(1.2);
     display: block;
-    @media (max-width:1600px) {
-        height: 125vh;
-    }
-    @media (max-width:1200px) {
-        height: 90vh;
-    }
-
-    @media (max-width:1100px) {
-        height: 85vh;
-    }
-
-
-
 }
 
 .img_text {
@@ -121,10 +90,11 @@
     max-width: 900px;
     width: 100%;
 
-    @include media (1550px){
-    max-width: 800px;
+    @include media (1550px) {
+        max-width: 800px;
 
     }
+
     @include media (600px) {
         max-width: 100%;
         width: 340px;
@@ -261,6 +231,7 @@
 
     &_card {
         width: 70%;
+
         @media (max-width:550px) {
             margin-right: 5%;
             width: 80%;
@@ -282,6 +253,7 @@
             width: 30%;
             justify-content: flex-end;
         }
+
         @include media(550px) {
             width: 15%;
             justify-content: flex-end;
@@ -397,5 +369,24 @@
             background: white;
             color: #384D8B;
         }
+    }
+}
+
+.main-carousel,
+.main-carousel .carousel .items .carousel-image,
+.img_card img {
+    @media (max-width:1600px) {
+        height: 125vh ;
+    }
+
+    @media (max-width:1200px) {
+        height: 90vh;
+    }
+
+    @media (max-width:1100px) {
+        height: 900px;
+    }
+    @media (max-width:1000px) {
+        height: 765px;
     }
 }

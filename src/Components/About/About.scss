@@ -132,10 +132,35 @@
             line-height: 18px;
         }
 
-        img {
+        &_img {
+            width: 80px;
+            height: 100%;
+            color: black;
+            @include media(1400px) {
+                width: 54px;
+                height: 54px;
+            }
+
+            @include media(1200px) {
+                width: 40px;
+                height: 40px;
+            }
+
+            @include media(600px) {
+                width: 48px;
+                height: 48px;
+            }
+
+            &_color{
+                fill: black;
+            }
+            &_color2{
+                fill: #384D8B;
+            }
+        }
+        &_card{
             width: 80px;
             height: 80px;
-
             @include media(1400px) {
                 width: 54px;
                 height: 54px;
