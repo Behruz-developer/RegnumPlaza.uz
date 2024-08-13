@@ -15,32 +15,38 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Golos Text', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Golos Text', sans-serif;
 }
+
+body {
+  // background: #384D8B;
+}
+
 @media (min-width: 1000px) and (max-width: 1600px) {
   body {
-    transform: scale(0.8); /* 80% ga kichraytirish */
+    transform: scale(0.8);
     transform-origin: top left;
     width: 125%;
-    height: 100vh; /* Butun ekran balandligini qamrab oladi */
+    height: 100vh;
     overflow-x: hidden;
-    background-color: white;
+    background: white;
+
   }
 }
-.container{
-    width: 90%;
-    margin-left: 5%;
+
+.container {
+  width: 90%;
+  margin-left: 5%;
 }
 
 .container2 {
-    width: 100%;
+  width: 100%;
 
-    @include media (1200px) {
-        width: 90%;
-        margin-left: 5%;
-    }
+  @include media (1200px) {
+    width: 90%;
+    margin-left: 5%;
+  }
 }

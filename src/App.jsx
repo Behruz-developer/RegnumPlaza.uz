@@ -41,17 +41,37 @@ const App = () => {
         <Loading />
       ) : (
         <>
-          <Nav />
-          <Upcoming images={images} />
-          <About />
-          <Location />
-          <Block_average />
-          <Blocks_location />
-          <Houses_plan />
-          <Send_form />
-          <Construction />
-          <Company />
-          <Footer />
+          <div id="top">
+            <Nav />
+            <Upcoming images={images} />
+            <div id="about">
+              <About />
+            </div>
+            <div id="location">
+              <Location />
+            </div>
+            <div id="average">
+              <Block_average />
+            </div>
+            <div id="blocks_location">
+              <Blocks_location />
+            </div>
+            <div id="houses_plan">
+              <Houses_plan />
+            </div>
+            <div id="send_form">
+              <Send_form />
+            </div>
+            <div id="construction">
+              <Construction />
+            </div>
+            <div id="company">
+              <Company />
+            </div>
+            <div id="footer">
+              <Footer />
+            </div>
+          </div>
         </>
       )}
     </>

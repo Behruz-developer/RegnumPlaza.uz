@@ -18,7 +18,7 @@
         gap: 24px;
         width: 100%;
 
-        @include media(600px) {
+        @include media(650px) {
             grid-template-columns: repeat(1, 100%);
             grid-template-rows: repeat(3, 0.5fr);
         }
@@ -30,8 +30,11 @@
         row-gap: 16px;
         grid-column: span 1;
 
-        @include media(1200px) {
+        @include media(1000px) {
             grid-row: span 3;
+        }
+        @include media(650px) {
+            grid-row: span 1;
         }
     }
 
@@ -47,6 +50,7 @@
             line-height: 40px;
 
         }
+
         @include media(800px) {
             font-size: 24px;
             line-height: 32px;
@@ -64,6 +68,12 @@
 
         @include media(1200px) {
             font-size: 16px;
+            line-height: 22px;
+        }
+
+        @include media(1000px) {
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 
@@ -74,12 +84,13 @@
         flex: 2 2 40%;
         width: 100%;
 
-        @include media(1200px) {
+        @include media(1000px) {
             grid-column: span 2;
         }
 
-        @include media(600px) {
+        @include media(650px) {
             grid-column: span 1;
+            grid-row:  2;
         }
     }
 
@@ -110,7 +121,7 @@
         column-gap: 16px;
         width: 40%;
 
-        @include media(1200px) {
+        @include media(1000px) {
             width: 30%;
             font-size: 18px;
             line-height: 24px;
@@ -122,7 +133,7 @@
             line-height: 24px;
         }
 
-        @include media(600px) {
+        @include media(650px) {
             width: 47.5%;
             font-size: 14px;
             line-height: 18px;
@@ -152,16 +163,14 @@
     &_card_left {
         position: relative;
         grid-row: span 3;
-
         max-height: 560px;
 
-        @include media(1200px) {
+        @include media(1000px) {
             max-height: 400px;
         }
 
-        @include media(600px) {
-            grid-row: span 2;
-            order: 1;
+        @include media(650px) {
+            grid-row:  span 1;
             grid-column: span 1;
         }
 
@@ -180,6 +189,7 @@
             @include media(1000px) {
                 border-top-right-radius: 200px;
             }
+
             @include media (800px) {
                 border-top-right-radius: 150px;
             }
@@ -218,9 +228,14 @@
             left: -20px;
         }
 
-        @include media(600px) {
-            left: 0px;
-            
+        @include media(800px) {
+            left: -10px;
+            bottom: -35px;
+        }
+
+        @include media(650px) {
+            width: 100.2%;
+            left: -1px;
         }
 
         img {
@@ -254,9 +269,10 @@
             }
 
             @include media(850px) {
-                font-size: 14px;
-                line-height: 20px;
+                font-size: 12px;
+                line-height: 16px;
             }
+
         }
 
         &_text2 {
