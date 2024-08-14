@@ -44,6 +44,7 @@ const Nav = () => {
                         offset={-50}
                         href="#!"
                         className="nav_link"
+                        onClick={() => setActive(false)}
                       >
                         Loyiha haqida
                       </Link>
@@ -56,17 +57,18 @@ const Nav = () => {
                         offset={-50}
                         href="#!"
                         className="nav_link"
+                        onClick={() => setActive(false)}
                       >
                         Joylashgan o‘rni
                       </Link>
                     </li>
                     <li>
-                      <a href="#!" className="nav_link">
+                      <a href="#!" className="nav_link"  onClick={() => setActive(false)}>
                         Hovli
                       </a>
                     </li>
                     <li>
-                      <a href="#!" className="nav_link">
+                      <a href="#!" className="nav_link"  onClick={() => setActive(false)}>
                         Xollar
                       </a>
                     </li>
@@ -78,6 +80,7 @@ const Nav = () => {
                         offset={-50}
                         href="#!"
                         className="nav_link"
+                        onClick={() => setActive(false)}
                       >
                         Rejalashtirish
                       </Link>
@@ -90,6 +93,7 @@ const Nav = () => {
                         offset={-50}
                         href="#!"
                         className="nav_link"
+                        onClick={() => setActive(false)}
                       >
                         Bog‘lanish{" "}
                       </Link>
@@ -113,7 +117,7 @@ const Nav = () => {
                     <div className="nav_contact">
                       <PiPhoneCallLight className="nav_phone_icon" />
                       <a href="tel: 1066" className="nav_contact_text">
-                        1066
+                        1361
                       </a>
                     </div>
                     <div className="nav_download">
@@ -133,7 +137,7 @@ const Nav = () => {
               <div className="nav_contact">
                 <PiPhoneCallLight className="nav_phone_icon" />
                 <a href="tel: 1066" className="nav_contact_text">
-                  1066
+                  1361
                 </a>
                 <IoMenu className="nav_menu" onClick={() => setActive(true)} />
               </div>

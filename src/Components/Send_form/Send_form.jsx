@@ -70,14 +70,13 @@ const Send_form = () => {
           </div>
           <div className="form_card_right">
             <div className="card_right_box">
-              <h3 className="form_title">Mutaxassis maslahati</h3>
+              <h3 className="form_title">Mutaxassis bilan suhbat</h3>
               <p className="form_text">
-                Aloqa ma’lumotlaringizni qoldiring va menejerimiz loyiha haqida
-                ko’proq qiziqarli ma’lumotlar beradi
+                Telefon raqamingizni qoldiring, mutaxassislarimiz tez orada siz bilan bogʻlanib, loyiha haqida batafsil maʼlumot berishadi.
               </p>
               <div className="data_box">
                 <div className="data_box_name">
-                  <p className="name_text">Ismingiz</p>
+                  <p className="name_text">Ismingiz (Ismingizni yozing)</p>
                   <input
                     type="text"
                     placeholder="Ismingizni kiriting"
@@ -90,7 +89,7 @@ const Send_form = () => {
                   />
                 </div>
                 <div className="data_box_name">
-                  <p className="name_text">Telefon raqamingiz</p>
+                  <p className="name_text">Telefon (Raqamingizni yozing)</p>
                   <input
                     type="text"
                     name="tel"
@@ -104,13 +103,13 @@ const Send_form = () => {
                 </div>
               </div>
               <div className="form_chekbox">
-                <input type="checkbox" name="" checked={isChecked} id="consent" onChange={(e) => setIsChecked(e.target.checked)}/>
+                <input type="checkbox" name="" checked={isChecked} id="consent" onChange={(e) => setIsChecked(e.target.checked)} />
                 <p className="name_text">
-                  Shaxsiy ma‘lumotlarim qayta ishlanishiga roziman
+                  Shaxsiy maʼlumotlarim qayta ishlanishiga roziman
                 </p>
               </div>
               <button className="name_text" onClick={handleSubmit}>
-                Jo‘natish
+                Yuborish
               </button>
             </div>
           </div>
