@@ -100,18 +100,18 @@ const Nav = () => {
                     </li>
                   </ul>
                   <div className="nav_icons">
-                    <div className="nav_icons_card">
+                    <a href="https://www.facebook.com/txtgroup.uzb" className="nav_icons_card">
                       <FaFacebookF className="nav_icons_icon" />
-                    </div>
-                    <div className="nav_icons_card">
+                    </a>
+                    <a href="https://www.instagram.com/txtgroup.uzb" className="nav_icons_card">
                       <FaInstagram className="nav_icons_icon" />
-                    </div>
-                    <div className="nav_icons_card">
+                    </a>
+                    <a href="https://t.me/txtgroupuzb" className="nav_icons_card">
                       <FaTelegramPlane className="nav_icons_icon" />
-                    </div>
-                    <div className="nav_icons_card">
+                    </a>
+                    <a href="#!" className="nav_icons_card">
                       <FaYoutube className="nav_icons_icon" />
-                    </div>
+                    </a>
                   </div>
                   <div className="nav_card_right menu">
                     <div className="nav_contact">
