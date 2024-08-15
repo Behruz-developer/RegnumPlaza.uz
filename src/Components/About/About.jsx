@@ -13,7 +13,6 @@ const About = () => {
       
       duration: 1000,
       once: true, 
-      offset: -50,
 
     });
   }, []);
@@ -21,7 +20,7 @@ const About = () => {
     <div className="about">
       <div className="container">
         <div className="about_box">
-          <div className="about_card_text" data-aos="fade-right">
+          <div className="about_card_text" data-aos="fade-right" data-aos-offset="-50">
             <h2 className="about_title">Loyiha haqida</h2>
             <p className="about_text">
               NRG Qorasuvda hammasi ajoyib! Joylashgan o`rnidan boshlab,

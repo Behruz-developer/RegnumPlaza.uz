@@ -9,17 +9,16 @@ const Location = () => {
       
       duration: 1000,
       once: true, 
-      offset: -200,
     });
   }, []);
   return (
     <div className="location">
       <div className="container">
         <div className="location_box">
-          <div className="location_card_left" data-aos="fade-right">
+          <div className="location_card_left" data-aos="fade-right" data-aos-offset="-200">
             <img src={universal} alt="" className="location_img" />
           </div>
-          <div className="location_card1" data-aos="fade-left">
+          <div className="location_card1" data-aos="fade-left" data-aos-offset="-200">
             <h3 className="location_title">Joylashgan o`rni</h3>
             <p className="location_text">
               Qorasuv dahasi - Toshkentdagi tarixiy qaror topgan ko'rkam hudud.
@@ -33,7 +32,7 @@ const Location = () => {
               yo'nalishingizni tanlashingiz kifoya.
             </p>
           </div>
-          <div className="location_card2" data-aos="fade-left">
+          <div className="location_card2" data-aos="fade-left" data-aos-offset="-200">
             <p className="location_text2">
               NRG Qorasuv - Siz va yaginlaringiz uchun zarur bolgan barcha
               qulayliklarni o'zida jamlagan, shahar xaritasidagi yangi nuqta va
