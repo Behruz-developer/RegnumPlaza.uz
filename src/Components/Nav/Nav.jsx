@@ -51,40 +51,40 @@ const Nav = () => {
                     </li>
                     <li>
                       <Link
-                        to="location"
+                        to="average"
                         smooth={true}
                         duration={500}
-                        offset={-50}
                         href="#!"
                         className="nav_link"
                         onClick={() => setActive(false)}
                       >
-                        Joylashgan o‘rni
+                        Bloklar joylashuvi
                       </Link>
                     </li>
                     <li>
-                      <a href="#!" className="nav_link"  onClick={() => setActive(false)}>
-                        Hovli
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!" className="nav_link"  onClick={() => setActive(false)}>
-                        Xollar
-                      </a>
+                      <Link to="houses"
+                        smooth={true}
+                        duration={500}
+                        offset={-50}
+                        onClick={() => setActive(false)}
+                        href="#!" className="nav_link"
+                      >
+                        Xonadonlarni rejalashtirish
+                      </Link>
                     </li>
                     <li>
                       <Link
-                        to="houses_plan"
-                        smooth={true}
+                        to="company"
+                         smooth={true}
                         duration={500}
-                        offset={-50}
+                        onClick={() => setActive(false)}
                         href="#!"
                         className="nav_link"
-                        onClick={() => setActive(false)}
                       >
-                        Rejalashtirish
+                        Kompaniya haqida
                       </Link>
                     </li>
+
                     <li>
                       <Link
                         to="footer"
