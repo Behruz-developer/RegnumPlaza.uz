@@ -73,24 +73,7 @@ const Footer = () => {
           </div>
           <div className="footer_card2">
             <div >
-              <MapContainer
-                center={position}
-                zoom={13}
-                className="map_container"
-
-              >
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  opacity={0.2}
-                />
-                <TileLayer
-                  url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-                  opacity={1}
-                />
-                <Marker position={position}>
-                  <Popup>Kosmonavtlar Metro Bekati</Popup>
-                </Marker>
-              </MapContainer>
+              <iframe className="map_container" src="https://yandex.com/map-widget/v1/?um=constructor%3A99b8ce0cf880c0febd025474bc3ea144143cafa50311dc7592b79639c435804b&amp;source=constructor" width="831" height="578" frameborder="0"></iframe>
             </div>
           </div>
           <div className="footer_card3">

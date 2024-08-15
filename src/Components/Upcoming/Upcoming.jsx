@@ -55,11 +55,7 @@ const Upcoming = ({ images }) => {
                           <a href="#!" className="upcoming_icon">
                             Jonli <br /> efir
                           </a>
-                          <a href="#!" className="upcoming_icon">
-                            <CiGlobe className="upcoming_globe" />
-                            360
-                          </a>
-                          <a href="#!" className="upcoming_icon">
+                          <a href="tel: 1361" className="upcoming_icon">
                             <PiPhoneCallLight className="upcoming_phone" />
                           </a>
                         </div>

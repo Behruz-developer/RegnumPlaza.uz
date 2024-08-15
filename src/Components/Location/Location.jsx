@@ -1,15 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useEffect } from "react";
 import universal from "../../assets/images/universal.png";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 const Location = () => {
+  useEffect(() => {
+    AOS.init({
+      
+      duration: 1000,
+      once: true, 
+      offset: -200,
+    });
+  }, []);
   return (
     <div className="location">
       <div className="container">
         <div className="location_box">
-          <div className="location_card_left">
+          <div className="location_card_left" data-aos="fade-right">
             <img src={universal} alt="" className="location_img" />
           </div>
-          <div className="location_card1">
+          <div className="location_card1" data-aos="fade-left">
             <h3 className="location_title">Joylashgan o`rni</h3>
             <p className="location_text">
               Qorasuv dahasi - Toshkentdagi tarixiy qaror topgan ko'rkam hudud.
@@ -23,7 +33,7 @@ const Location = () => {
               yo'nalishingizni tanlashingiz kifoya.
             </p>
           </div>
-          <div className="location_card2">
+          <div className="location_card2" data-aos="fade-left">
             <p className="location_text2">
               NRG Qorasuv - Siz va yaginlaringiz uchun zarur bolgan barcha
               qulayliklarni o'zida jamlagan, shahar xaritasidagi yangi nuqta va
